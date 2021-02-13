@@ -1,0 +1,614 @@
+Removing old YARA rules
+Files in tmp folder were removed
+YARA rule(s) of metasploit cluster were removed
+YARA rule of clusters of type 2 removed
+YARA rule of clusters of type 3 removed
+YARA rule of clusters of type 4 removed
+YARA rule of clusters of type 5 removed
+YARA rule of clusters of type 6 removed
+
+
+>>>>>>> Greedy Generation Algorithm + Selfish Gene Optimization <<<<<<<
+This test started on: Mon Mar 26 13:43:38 EDT 2018
+Maximum generations: 20000
+Steady state after: 2000 generations
+Initial probability of 0: 0.5
+All the other values are the default one.
+
+>>>>> Clusters of type 2 <<<<<
+
+>>> type 2 cluster 1 <<<
+__  __   __  __     _____
+\ \/ /__ \ \/ /__ _/ ___/__ ___   YaYaGen -- Yet Another Yara Rule Generator
+ \  / _ `/\  / _ `/ (_ / -_) _ \  (!) v0.5_winter18
+ /_/\_,_/ /_/\_,_/\___/\__/_//_/  by Andrea Marcelli & Giovanni Squillero
+
+13:43:39 INFO:: Analyzing 3 reports
+13:43:39 INFO:: Greedy run
+13:43:39 INFO:: Total rule number: 2
+13:43:39 INFO:: RULE (0) - num_literals: 64 - score: 4263.00 - matches: 2/3 (66.67) reports
+13:43:39 INFO:: RULE (1) - num_literals: 165 - score: 7526.00 - matches: 1/3 (33.33) reports
+13:43:39 INFO:: Reports matched by this set of rules: 3/3
+
+13:43:39 INFO:: Try to improve rules with Selfish Gene optimizer...
+13:43:39 INFO:: 
+13:43:39 INFO:: # SGX configuration parameters #
+13:43:39 INFO:: Alpha default value: 0.013229
+13:43:39 INFO:: Initial probability [0: 0.39, 1: 0.61]
+13:43:39 INFO:: No mutation probability configured, will be used the default value.
+13:43:39 INFO:: Maximum number of generations: 20000 - Archive size: 5
+13:43:39 INFO:: Steady state after: 2000 generations
+
+13:43:39 INFO:: Allele Distribution generated: [64 \xd7 \u03bb2{[0:0.3884, 1:0.6116], \u03b1=0.01323}]
+13:43:39 INFO:: Selfish Gene starts!
+13:43:39 INFO:: Generation 1: 1 individual in archive
+13:43:39 INFO:: i0 (gen 1): (Matches: 0.5, Score: 2458.0, Literals: 40) [1, 1, 0, 1, 0, 3\xd71, 3\xd70, 1, 0, 3\xd71, 0, 0, 1, 1, 4\xd70, 6\xd71, 0, 0, 1, 1, 0, 3\xd71, 0, 1, 1, 0, 3\xd71, 0, 0, 4\xd71, 0, 0, 1, 1, 0, 3\xd71, 0, 3\xd71, 0]
+
+13:49:41 INFO:: Solution: {I{[13\xd70, 1, 0, 1, 1, 5\xd70, 1, 4\xd70, 1, 1, 0, 0, 1, 6\xd70, 1, 3\xd70, 1, 0, 1, 4\xd70, 1, 6\xd70, 1, 13\xd70, 1, 4\xd70, 1, 1, 17\xd70, 1, 0, 1, 21\xd70, 1, 5\xd70, 1, 4\xd70, 1, 5\xd70, 1, 1, 0, 0, 1, 0, 0, 1, 4\xd70, 1, 1, 0, 1, 1, 10\xd70, 1, 0, 0], f=(Matches: 1, Score: 570.0, Literals: 29), \u2605:19999}}
+
+13:49:41 INFO:: Rule 1 optimized
+13:49:41 INFO:: RULE (1_optimized_sgx) - num_literals: 29 - score: 570.00 - matches: 1/3 (33.33) reports
+13:49:41 INFO:: 
+
+13:49:41 INFO:: Reports matched by the optimized set of rules: 3/3
+
+0 hours 6 minutes and 3 seconds elapsed.
+
+
+>>> type 2 cluster 2 <<<
+__  __   __  __     _____
+\ \/ /__ \ \/ /__ _/ ___/__ ___   YaYaGen -- Yet Another Yara Rule Generator
+ \  / _ `/\  / _ `/ (_ / -_) _ \  (!) v0.5_winter18
+ /_/\_,_/ /_/\_,_/\___/\__/_//_/  by Andrea Marcelli & Giovanni Squillero
+
+13:49:41 INFO:: Analyzing 3 reports
+13:49:41 INFO:: Greedy run
+13:49:41 INFO:: Total rule number: 1
+13:49:41 INFO:: RULE (0) - num_literals: 15 - score: 1145.00 - matches: 3/3 (100.00) reports
+13:49:41 INFO:: Reports matched by this set of rules: 3/3
+
+13:49:41 INFO:: Try to improve rules with Selfish Gene optimizer...
+13:49:41 INFO:: 
+13:49:41 INFO:: # SGX configuration parameters #
+13:49:41 INFO:: Alpha default value: 0.013229
+13:49:41 INFO:: Initial probability [0: 0.08, 1: 0.92]
+13:49:41 INFO:: No mutation probability configured, will be used the default value.
+13:49:41 INFO:: Maximum number of generations: 20000 - Archive size: 5
+13:49:41 INFO:: Steady state after: 2000 generations
+
+13:49:41 INFO:: Allele Distribution generated: [15 \xd7 \u03bb2{[0:0.08133, 1:0.9187], \u03b1=0.01323}]
+13:49:41 INFO:: Selfish Gene starts!
+13:49:41 INFO:: Generation 1: 1 individual in archive
+13:49:41 INFO:: i0 (gen 1): (Matches: 0.5, Score: 945.0, Literals: 13) [11\xd71, 0, 1, 0, 1]
+13:49:48 INFO:: 
+13:49:48 WARNING:: Steady state reached! - Generation 3751
+13:49:48 INFO:: 
+
+13:49:48 INFO:: Solution: {I{[1, 0, 0, 1, 0, 0, 3\xd71, 6\xd70], f=(Matches: 3, Score: 405.0, Literals: 5), \u2605:1750}, I{[3\xd70, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0], f=(Matches: 3, Score: 405.0, Literals: 5), \u2605:2936}, I{[3\xd70, 1, 4\xd70, 1, 1, 0, 0, 1, 1, 0], f=(Matches: 3, Score: 405.0, Literals: 5), \u2605:2446}, I{[010100100100100], f=(Matches: 3, Score: 405.0, Literals: 5), \u2605:2256}, I{[3\xd70, 1, 3\xd70, 1, 1, 0, 0, 1, 1, 0, 0], f=(Matches: 3, Score: 405.0, Literals: 5), \u2605:1767}}
+
+13:49:48 INFO:: Rule 0 optimized
+13:49:48 INFO:: RULE (0_optimized_sgx) - num_literals: 5 - score: 405.00 - matches: 3/3 (100.00) reports
+13:49:48 INFO:: 
+
+13:49:48 INFO:: Reports matched by the optimized set of rules: 3/3
+
+0 hours 0 minutes and 7 seconds elapsed.
+
+
+>>> type 2 cluster 3 <<<
+__  __   __  __     _____
+\ \/ /__ \ \/ /__ _/ ___/__ ___   YaYaGen -- Yet Another Yara Rule Generator
+ \  / _ `/\  / _ `/ (_ / -_) _ \  (!) v0.5_winter18
+ /_/\_,_/ /_/\_,_/\___/\__/_//_/  by Andrea Marcelli & Giovanni Squillero
+
+13:49:48 INFO:: Analyzing 20 reports
+13:49:48 INFO:: Greedy run
+13:49:48 INFO:: Total rule number: 1
+13:49:48 INFO:: RULE (0) - num_literals: 13 - score: 688.00 - matches: 20/20 (100.00) reports
+13:49:48 INFO:: Reports matched by this set of rules: 20/20
+
+13:49:48 INFO:: Try to improve rules with Selfish Gene optimizer...
+13:49:48 INFO:: 
+13:49:48 INFO:: # SGX configuration parameters #
+13:49:48 INFO:: Alpha default value: 0.013229
+13:49:48 INFO:: Initial probability [0: 0.07, 1: 0.93]
+13:49:48 INFO:: No mutation probability configured, will be used the default value.
+13:49:48 INFO:: Maximum number of generations: 20000 - Archive size: 5
+13:49:48 INFO:: Steady state after: 2000 generations
+
+13:49:48 INFO:: Allele Distribution generated: [13 \xd7 \u03bb2{[0:0.0688, 1:0.9312], \u03b1=0.01323}]
+13:49:48 INFO:: Selfish Gene starts!
+13:49:48 INFO:: Generation 1: 1 individual in archive
+13:49:48 INFO:: i0 (gen 1): (Matches: 20, Score: 512.0, Literals: 11) [8\xd71, 0, 0, 3\xd71]
+13:49:51 INFO:: 
+13:49:51 WARNING:: Steady state reached! - Generation 2034
+13:49:51 INFO:: 
+
+13:49:51 INFO:: Solution: {I{[0, 1, 1, 0, 4\xd71, 0, 1, 1, 0, 1], f=(Matches: 20, Score: 401.0, Literals: 9), \u2605:348}, I{[0, 1, 1, 0, 4\xd71, 0, 0, 3\xd71], f=(Matches: 20, Score: 401.0, Literals: 9), \u2605:33}}
+
+13:49:51 INFO:: Rule 0 optimized
+13:49:51 INFO:: RULE (0_optimized_sgx) - num_literals: 9 - score: 401.00 - matches: 20/20 (100.00) reports
+13:49:51 INFO:: 
+
+13:49:51 INFO:: Reports matched by the optimized set of rules: 20/20
+
+0 hours 0 minutes and 3 seconds elapsed.
+
+
+>>> type 2 cluster 4 <<<
+__  __   __  __     _____
+\ \/ /__ \ \/ /__ _/ ___/__ ___   YaYaGen -- Yet Another Yara Rule Generator
+ \  / _ `/\  / _ `/ (_ / -_) _ \  (!) v0.5_winter18
+ /_/\_,_/ /_/\_,_/\___/\__/_//_/  by Andrea Marcelli & Giovanni Squillero
+
+13:49:51 INFO:: Analyzing 4 reports
+13:49:51 INFO:: Greedy run
+13:49:51 INFO:: Total rule number: 1
+13:49:51 INFO:: RULE (0) - num_literals: 73 - score: 4665.00 - matches: 4/4 (100.00) reports
+13:49:51 INFO:: Reports matched by this set of rules: 4/4
+
+13:49:51 INFO:: Try to improve rules with Selfish Gene optimizer...
+13:49:51 INFO:: 
+13:49:51 INFO:: # SGX configuration parameters #
+13:49:51 INFO:: Alpha default value: 0.013229
+13:49:51 INFO:: Initial probability [0: 0.44, 1: 0.56]
+13:49:51 INFO:: No mutation probability configured, will be used the default value.
+13:49:51 INFO:: Maximum number of generations: 20000 - Archive size: 5
+13:49:51 INFO:: Steady state after: 2000 generations
+
+13:49:51 INFO:: Allele Distribution generated: [73 \xd7 \u03bb2{[0:0.4448, 1:0.5552], \u03b1=0.01323}]
+13:49:51 INFO:: Selfish Gene starts!
+13:49:51 INFO:: Generation 1: 1 individual in archive
+13:49:51 INFO:: i0 (gen 1): (Matches: 0.5, Score: 2530.0, Literals: 44) [1, 0, 1, 1, 0, 1, 0, 3\xd71, 0, 0, 1, 0, 1, 1, 0, 0, 3\xd71, 0, 0, 3\xd71, 0, 3\xd71, 0, 1, 0, 0, 1, 0, 1, 3\xd70, 1, 0, 1, 1, 0, 1, 0, 3\xd71, 0, 0, 6\xd71, 0, 1, 1, 0, 5\xd71, 0, 1, 1, 3\xd70]
+13:54:38 INFO:: 
+
+13:54:38 INFO:: Solution: {I{[0, 7\xd71, 0, 0, 5\xd71, 0, 1, 0, 3\xd71, 0, 5\xd71, 0, 3\xd71, 4\xd70, 3\xd71, 0, 1, 1, 0, 1, 1], f=(Matches: 1, Score: 416.0, Literals: 31), \u2605:19999}}
+
+13:54:38 INFO:: Rule 1 optimized
+13:54:38 INFO:: RULE (1_optimized_sgx) - num_literals: 31 - score: 416.00 - matches: 1/5 (20.00) reports
+13:54:38 INFO:: 
+
+13:54:38 INFO:: Reports matched by the optimized set of rules: 5/5
+
+0 hours 2 minutes and 38 seconds elapsed.
+
+
+
+>>>>> Clusters of type 3 <<<<<
+
+>>> type 3 cluster 1 <<<
+__  __   __  __     _____
+\ \/ /__ \ \/ /__ _/ ___/__ ___   YaYaGen -- Yet Another Yara Rule Generator
+ \  / _ `/\  / _ `/ (_ / -_) _ \  (!) v0.5_winter18
+ /_/\_,_/ /_/\_,_/\___/\__/_//_/  by Andrea Marcelli & Giovanni Squillero
+
+13:54:38 INFO:: Analyzing 4 reports
+13:54:38 INFO:: Greedy run
+13:54:38 INFO:: Total rule number: 1
+13:54:38 INFO:: RULE (0) - num_literals: 260 - score: 17614.00 - matches: 4/4 (100.00) reports
+13:54:38 INFO:: Reports matched by this set of rules: 4/4
+
+13:54:38 INFO:: Try to improve rules with Selfish Gene optimizer...
+13:54:38 INFO:: 
+13:54:38 INFO:: # SGX configuration parameters #
+13:54:38 INFO:: Alpha default value: 0.013229
+13:54:38 INFO:: Initial probability [0: 0.97, 1: 0.03]
+13:54:38 INFO:: No mutation probability configured, will be used the default value.
+13:54:38 INFO:: Maximum number of generations: 20000 - Archive size: 5
+13:54:38 INFO:: Steady state after: 2000 generations
+
+13:54:38 INFO:: Allele Distribution generated: [260 \xd7 \u03bb2{[0:0.97, 1:0.03], \u03b1=0.01323}]
+13:54:38 INFO:: Selfish Gene starts!
+13:54:38 INFO:: Generation 1: 1 individual in archive
+13:54:38 INFO:: i0 (gen 1): (Matches: 0, Score: 132.0, Literals: 4) [57\xd70, 1, 56\xd70, 1, 84\xd70, 1, 24\xd70, 1, 35\xd70]
+
+14:01:13 INFO:: Solution: {I{[11\xd70, 1, 1, 7\xd70, 1, 7\xd70, 1, 4\xd70, 1, 29\xd70, 1, 8\xd70, 1, 4\xd70, 1, 7\xd70, 1, 0, 1, 21\xd70, 1, 43\xd70, 1, 0, 0, 1, 52\xd70, 1, 36\xd70, 1, 11\xd70, 1, 0], f=(Matches: 4, Score: 410.0, Literals: 16), \u2605:19587}, I{[29\xd70, 1, 8\xd70, 1, 0, 1, 32\xd70, 1, 38\xd70, 1, 33\xd70, 1, 15\xd70, 1, 25\xd70, 1, 17\xd70, 1, 0, 0, 1, 11\xd70, 1, 1, 0, 0, 1, 24\xd70, 1, 6\xd70, 1, 0, 1], f=(Matches: 4, Score: 410.0, Literals: 16), \u2605:19457}}
+
+14:01:13 INFO:: Rule 0 optimized
+14:01:13 INFO:: RULE (0_optimized_sgx) - num_literals: 16 - score: 410.00 - matches: 4/4 (100.00) reports
+14:01:13 INFO:: 
+
+14:01:13 INFO:: Reports matched by the optimized set of rules: 4/4
+
+0 hours 6 minutes and 35 seconds elapsed.
+
+
+>>> type 3 cluster 2 <<<
+__  __   __  __     _____
+\ \/ /__ \ \/ /__ _/ ___/__ ___   YaYaGen -- Yet Another Yara Rule Generator
+ \  / _ `/\  / _ `/ (_ / -_) _ \  (!) v0.5_winter18
+ /_/\_,_/ /_/\_,_/\___/\__/_//_/  by Andrea Marcelli & Giovanni Squillero
+
+14:01:13 INFO:: Analyzing 3 reports
+14:01:13 INFO:: Greedy run
+14:01:13 INFO:: Total rule number: 1
+14:01:13 INFO:: RULE (0) - num_literals: 163 - score: 12015.00 - matches: 3/3 (100.00) reports
+14:01:13 INFO:: Reports matched by this set of rules: 3/3
+
+14:01:13 INFO:: Try to improve rules with Selfish Gene optimizer...
+14:01:13 INFO:: 
+14:01:13 INFO:: # SGX configuration parameters #
+14:01:13 INFO:: Alpha default value: 0.013229
+14:01:13 INFO:: Initial probability [0: 0.97, 1: 0.03]
+14:01:13 INFO:: No mutation probability configured, will be used the default value.
+14:01:13 INFO:: Maximum number of generations: 20000 - Archive size: 5
+14:01:13 INFO:: Steady state after: 2000 generations
+
+14:01:13 INFO:: Allele Distribution generated: [163 \xd7 \u03bb2{[0:0.97, 1:0.03], \u03b1=0.01323}]
+14:01:13 INFO:: Selfish Gene starts!
+14:01:13 INFO:: Generation 1: 1 individual in archive
+14:01:13 INFO:: i0 (gen 1): (Matches: 3, Score: 415.0, Literals: 5) [28\xd70, 1, 16\xd70, 1, 30\xd70, 1, 34\xd70, 1, 10\xd70, 1, 40\xd70]
+
+14:12:38 INFO:: Solution: {I{[1, 1, 0, 5\xd71, 5\xd70, 4\xd71, 0, 1, 0, 1, 1, 3\xd70, 3\xd71, 0, 7\xd71, 0, 1, 0, 4\xd71, 0, 0, 1, 0, 1, 0, 0, 6\xd71, 0, 1, 0], f=(Matches: 1, Score: 532.0, Literals: 38), \u2605:20000}}
+
+14:12:38 INFO:: Rule 1 optimized
+14:12:38 INFO:: RULE (1_optimized_sgx) - num_literals: 38 - score: 532.00 - matches: 1/4 (25.00) reports
+14:12:38 INFO:: 
+
+14:12:38 INFO:: Reports matched by the optimized set of rules: 4/4
+
+0 hours 4 minutes and 4 seconds elapsed.
+
+
+>>> type 4 cluster 2 <<<
+__  __   __  __     _____
+\ \/ /__ \ \/ /__ _/ ___/__ ___   YaYaGen -- Yet Another Yara Rule Generator
+ \  / _ `/\  / _ `/ (_ / -_) _ \  (!) v0.5_winter18
+ /_/\_,_/ /_/\_,_/\___/\__/_//_/  by Andrea Marcelli & Giovanni Squillero
+
+14:12:38 INFO:: Analyzing 4 reports
+14:12:38 INFO:: Greedy run
+14:12:38 INFO:: Total rule number: 1
+14:12:38 INFO:: RULE (0) - num_literals: 30 - score: 904.00 - matches: 4/4 (100.00) reports
+14:12:38 INFO:: Reports matched by this set of rules: 4/4
+
+14:12:38 INFO:: Try to improve rules with Selfish Gene optimizer...
+14:12:38 INFO:: 
+14:12:38 INFO:: # SGX configuration parameters #
+14:12:38 INFO:: Alpha default value: 0.013229
+14:12:38 INFO:: Initial probability [0: 0.18, 1: 0.82]
+14:12:38 INFO:: No mutation probability configured, will be used the default value.
+14:12:38 INFO:: Maximum number of generations: 20000 - Archive size: 5
+14:12:38 INFO:: Steady state after: 2000 generations
+
+14:12:38 INFO:: Allele Distribution generated: [30 \xd7 \u03bb2{[0:0.1753, 1:0.8247], \u03b1=0.01323}]
+14:12:38 INFO:: Selfish Gene starts!
+14:12:38 INFO:: Generation 1: 1 individual in archive
+14:12:38 INFO:: i0 (gen 1): (Matches: 0.5, Score: 694.0, Literals: 25) [1, 1, 0, 3\xd71, 0, 8\xd71, 0, 7\xd71, 0, 1, 1, 0, 3\xd71]
+
+14:13:36 INFO:: Solution: {I{[0, 0, 4\xd71, 0, 6\xd71, 0, 1, 0, 1, 0, 3\xd71, 0, 1, 0, 3\xd71, 0, 0, 1], f=(Matches: 4, Score: 401.0, Literals: 20), \u2605:19996}}
+
+14:13:36 INFO:: Rule 0 optimized
+14:13:36 INFO:: RULE (0_optimized_sgx) - num_literals: 20 - score: 401.00 - matches: 4/4 (100.00) reports
+14:13:36 INFO:: 
+
+14:13:36 INFO:: Reports matched by the optimized set of rules: 4/4
+
+0 hours 0 minutes and 58 seconds elapsed.
+
+
+>>> type 4 cluster 3 <<<
+__  __   __  __     _____
+\ \/ /__ \ \/ /__ _/ ___/__ ___   YaYaGen -- Yet Another Yara Rule Generator
+ \  / _ `/\  / _ `/ (_ / -_) _ \  (!) v0.5_winter18
+ /_/\_,_/ /_/\_,_/\___/\__/_//_/  by Andrea Marcelli & Giovanni Squillero
+
+14:13:36 INFO:: Analyzing 6 reports
+14:13:36 INFO:: Greedy run
+14:13:36 INFO:: Total rule number: 1
+14:13:36 INFO:: RULE (0) - num_literals: 21 - score: 910.00 - matches: 6/6 (100.00) reports
+14:13:36 INFO:: Reports matched by this set of rules: 6/6
+
+14:13:36 INFO:: Try to improve rules with Selfish Gene optimizer...
+14:13:36 INFO:: 
+14:13:36 INFO:: # SGX configuration parameters #
+14:13:36 INFO:: Alpha default value: 0.013229
+14:13:36 INFO:: Initial probability [0: 0.12, 1: 0.88]
+14:13:36 INFO:: No mutation probability configured, will be used the default value.
+14:13:36 INFO:: Maximum number of generations: 20000 - Archive size: 5
+14:13:36 INFO:: Steady state after: 2000 generations
+
+14:13:36 INFO:: Allele Distribution generated: [21 \xd7 \u03bb2{[0:0.1189, 1:0.8811], \u03b1=0.01323}]
+14:13:36 INFO:: Selfish Gene starts!
+14:13:36 INFO:: Generation 1: 1 individual in archive
+14:13:36 INFO:: i0 (gen 1): (Matches: 0.5, Score: 695.0, Literals: 18) [6\xd71, 0, 1, 1, 0, 3\xd71, 0, 7\xd71]
+14:13:43 INFO:: 
+14:13:43 WARNING:: Steady state reached! - Generation 2425
+14:13:43 INFO:: 
+
+14:13:43 INFO:: Solution: {I{[0, 4\xd71, 0, 3\xd71, 0, 4\xd71, 0, 4\xd71, 0, 1], f=(Matches: 6, Score: 410.0, Literals: 16), \u2605:826}, I{[0, 5\xd71, 0, 7\xd71, 0, 0, 3\xd71, 0, 1], f=(Matches: 6, Score: 410.0, Literals: 16), \u2605:725}, I{[0, 8\xd71, 0, 4\xd71, 0, 0, 3\xd71, 0, 1], f=(Matches: 6, Score: 410.0, Literals: 16), \u2605:882}, I{[5\xd71, 0, 0, 1, 1, 0, 5\xd71, 0, 3\xd71, 0, 1], f=(Matches: 6, Score: 410.0, Literals: 16), \u2605:585}, I{[6\xd71, 0, 1, 1, 0, 4\xd71, 0, 0, 3\xd71, 0, 1], f=(Matches: 6, Score: 410.0, Literals: 16), \u2605:424}}
+
+14:13:43 INFO:: Rule 0 optimized
+14:13:43 INFO:: RULE (0_optimized_sgx) - num_literals: 16 - score: 410.00 - matches: 6/6 (100.00) reports
+14:13:43 INFO:: 
+
+14:13:43 INFO:: Reports matched by the optimized set of rules: 6/6
+
+0 hours 0 minutes and 7 seconds elapsed.
+
+
+>>> type 4 cluster 4 <<<
+__  __   __  __     _____
+\ \/ /__ \ \/ /__ _/ ___/__ ___   YaYaGen -- Yet Another Yara Rule Generator
+ \  / _ `/\  / _ `/ (_ / -_) _ \  (!) v0.5_winter18
+ /_/\_,_/ /_/\_,_/\___/\__/_//_/  by Andrea Marcelli & Giovanni Squillero
+
+14:13:43 INFO:: Analyzing 6 reports
+14:13:43 INFO:: Greedy run
+14:13:43 INFO:: Total rule number: 1
+14:13:43 INFO:: RULE (0) - num_literals: 28 - score: 1695.00 - matches: 6/6 (100.00) reports
+14:13:43 INFO:: Reports matched by this set of rules: 6/6
+
+14:13:43 INFO:: Try to improve rules with Selfish Gene optimizer...
+14:13:43 INFO:: 
+14:13:43 INFO:: # SGX configuration parameters #
+14:13:43 INFO:: Alpha default value: 0.013229
+14:13:43 INFO:: Initial probability [0: 0.16, 1: 0.84]
+14:13:43 INFO:: No mutation probability configured, will be used the default value.
+14:13:43 INFO:: Maximum number of generations: 20000 - Archive size: 5
+14:13:43 INFO:: Steady state after: 2000 generations
+
+14:13:43 INFO:: Allele Distribution generated: [28 \xd7 \u03bb2{[0:0.1628, 1:0.8372], \u03b1=0.01323}]
+14:13:43 INFO:: Selfish Gene starts!
+14:13:43 INFO:: Generation 1: 1 individual in archive
+14:13:43 INFO:: i0 (gen 1): (Matches: 0.5, Score: 1395.0, Literals: 25) [4\xd71, 0, 4\xd71, 0, 14\xd71, 0, 3\xd71]
+
+14:14:39 INFO:: Solution: {I{[1, 3\xd70, 1, 0, 1, 1, 5\xd70, 3\xd71, 0, 0, 1, 7\xd70, 1, 1], f=(Matches: 6, Score: 405.0, Literals: 10), \u2605:19993}, I{[1, 3\xd70, 1, 0, 0, 1, 5\xd70, 1, 1, 3\xd70, 1, 1, 0, 1, 4\xd70, 1, 1], f=(Matches: 6, Score: 405.0, Literals: 10), \u2605:19997}, I{[1, 3\xd70, 1, 0, 0, 1, 5\xd70, 3\xd71, 0, 0, 1, 3\xd70, 1, 3\xd70, 1, 1], f=(Matches: 6, Score: 405.0, Literals: 10), \u2605:19988}, I{[1, 3\xd70, 1, 0, 0, 1, 5\xd70, 3\xd71, 0, 0, 1, 0, 1, 5\xd70, 1, 1], f=(Matches: 6, Score: 405.0, Literals: 10), \u2605:19989}, I{[1, 3\xd70, 1, 0, 1, 6\xd70, 3\xd71, 0, 0, 1, 0, 0, 1, 4\xd70, 1, 1], f=(Matches: 6, Score: 405.0, Literals: 10), \u2605:19998}}
+
+14:14:39 INFO:: Rule 0 optimized
+14:14:39 INFO:: RULE (0_optimized_sgx) - num_literals: 10 - score: 405.00 - matches: 6/6 (100.00) reports
+14:14:39 INFO:: 
+
+14:14:39 INFO:: Reports matched by the optimized set of rules: 6/6
+
+0 hours 0 minutes and 56 seconds elapsed.
+
+
+>>> type 4 cluster 5 <<<
+__  __   __  __     _____
+\ \/ /__ \ \/ /__ _/ ___/__ ___   YaYaGen -- Yet Another Yara Rule Generator
+ \  / _ `/\  / _ `/ (_ / -_) _ \  (!) v0.5_winter18
+ /_/\_,_/ /_/\_,_/\___/\__/_//_/  by Andrea Marcelli & Giovanni Squillero
+
+14:14:39 INFO:: Analyzing 8 reports
+14:14:39 INFO:: Greedy run
+14:14:39 INFO:: Total rule number: 1
+14:14:39 INFO:: RULE (0) - num_literals: 33 - score: 2025.00 - matches: 8/8 (100.00) reports
+14:14:39 INFO:: Reports matched by this set of rules: 8/8
+
+14:14:39 INFO:: Try to improve rules with Selfish Gene optimizer...
+14:14:39 INFO:: 
+14:14:39 INFO:: # SGX configuration parameters #
+14:14:39 INFO:: Alpha default value: 0.013229
+14:14:39 INFO:: Initial probability [0: 0.19, 1: 0.81]
+14:14:39 INFO:: No mutation probability configured, will be used the default value.
+14:14:39 INFO:: Maximum number of generations: 20000 - Archive size: 5
+14:14:39 INFO:: Steady state after: 2000 generations
+
+14:14:39 INFO:: Allele Distribution generated: [33 \xd7 \u03bb2{[0:0.1941, 1:0.8059], \u03b1=0.01323}]
+14:14:39 INFO:: Selfish Gene starts!
+14:14:39 INFO:: Generation 1: 1 individual in archive
+14:14:39 INFO:: i0 (gen 1): (Matches: 0.5, Score: 1450.0, Literals: 23) [7\xd71, 0, 0, 3\xd71, 0, 1, 0, 0, 7\xd71, 3\xd70, 1, 0, 1, 0, 3\xd71]
+
+14:15:46 INFO:: Solution: {I{[3\xd70, 1, 1, 0, 0, 1, 0, 0, 3\xd71, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1], f=(Matches: 8, Score: 410.0, Literals: 16), \u2605:19999}, I{[3\xd70, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 3\xd71, 0, 1, 0, 3\xd71, 0, 0, 1], f=(Matches: 8, Score: 410.0, Literals: 16), \u2605:19979}}
+
+14:15:46 INFO:: Rule 0 optimized
+14:15:46 INFO:: RULE (0_optimized_sgx) - num_literals: 16 - score: 410.00 - matches: 8/8 (100.00) reports
+14:15:46 INFO:: 
+
+14:15:46 INFO:: Reports matched by the optimized set of rules: 8/8
+
+0 hours 1 minutes and 7 seconds elapsed.
+
+
+
+>>>>> Clusters of type 5 <<<<<
+
+>>> type 5 cluster 1 <<<
+__  __   __  __     _____
+\ \/ /__ \ \/ /__ _/ ___/__ ___   YaYaGen -- Yet Another Yara Rule Generator
+ \  / _ `/\  / _ `/ (_ / -_) _ \  (!) v0.5_winter18
+ /_/\_,_/ /_/\_,_/\___/\__/_//_/  by Andrea Marcelli & Giovanni Squillero
+
+14:15:46 INFO:: Analyzing 4 reports
+14:15:46 INFO:: Greedy run
+14:15:46 INFO:: Total rule number: 1
+14:15:46 INFO:: RULE (0) - num_literals: 157 - score: 12215.00 - matches: 4/4 (100.00) reports
+14:15:46 INFO:: Reports matched by this set of rules: 4/4
+
+14:15:46 INFO:: Try to improve rules with Selfish Gene optimizer...
+14:15:46 INFO:: 
+14:15:46 INFO:: # SGX configuration parameters #
+14:15:46 INFO:: Alpha default value: 0.013229
+14:15:46 INFO:: Initial probability [0: 0.97, 1: 0.03]
+14:15:46 INFO:: No mutation probability configured, will be used the default value.
+14:15:46 INFO:: Maximum number of generations: 20000 - Archive size: 5
+14:15:46 INFO:: Steady state after: 2000 generations
+
+14:15:46 INFO:: Allele Distribution generated: [157 \xd7 \u03bb2{[0:0.9712, 1:0.0288], \u03b1=0.01323}]
+14:15:46 INFO:: Selfish Gene starts!
+14:15:46 INFO:: Generation 1: 1 individual in archive
+14:15:46 INFO:: i0 (gen 1): (Matches: 0, Score: 145.0, Literals: 4) [42\xd70, 1, 41\xd70, 1, 25\xd70, 1, 9\xd70, 1, 36\xd70]
+14:16:30 INFO:: 
+14:16:30 WARNING:: Steady state reached! - Generation 3563
+14:16:30 INFO:: 
+
+14:16:30 INFO:: Solution: {I{[19\xd70, 1, 5\xd70, 1, 31\xd70, 1, 1, 29\xd70, 1, 5\xd70, 1, 25\xd70, 1, 6\xd70, 1, 8\xd70, 1, 18\xd70, 1, 0], f=(Matches: 4, Score: 405.0, Literals: 10), \u2605:1562}}
+
+14:16:30 INFO:: Rule 0 optimized
+14:16:30 INFO:: RULE (0_optimized_sgx) - num_literals: 10 - score: 405.00 - matches: 4/4 (100.00) reports
+14:16:30 INFO:: 
+
+14:16:30 INFO:: Reports matched by the optimized set of rules: 4/4
+
+0 hours 0 minutes and 44 seconds elapsed.
+
+
+>>> type 5 cluster 2 <<<
+__  __   __  __     _____
+\ \/ /__ \ \/ /__ _/ ___/__ ___   YaYaGen -- Yet Another Yara Rule Generator
+ \  / _ `/\  / _ `/ (_ / -_) _ \  (!) v0.5_winter18
+ /_/\_,_/ /_/\_,_/\___/\__/_//_/  by Andrea Marcelli & Giovanni Squillero
+
+14:16:30 INFO:: Analyzing 15 reports
+14:16:30 INFO:: Greedy run
+14:16:30 INFO:: Total rule number: 2
+14:16:30 INFO:: RULE (0) - num_literals: 13 - score: 620.00 - matches: 14/15 (93.33) reports
+14:16:30 INFO:: RULE (1) - num_literals: 91 - score: 2512.00 - matches: 1/15 (6.67) reports
+14:16:30 INFO:: Reports matched by this set of rules: 15/15
+
+14:16:30 INFO:: Try to improve rules with Selfish Gene optimizer...
+14:16:30 INFO:: 
+14:16:30 INFO:: # SGX configuration parameters #
+14:16:30 INFO:: Alpha default value: 0.013229
+14:16:30 INFO:: Initial probability [0: 0.56, 1: 0.44]
+14:16:30 INFO:: No mutation probability configured, will be used the default value.
+14:16:30 INFO:: Maximum number of generations: 20000 - Archive size: 5
+14:16:30 INFO:: Steady state after: 2000 generations
+
+14:16:30 INFO:: Allele Distribution generated: [91 \xd7 \u03bb2{[0:0.5576, 1:0.4424], \u03b1=0.01323}]
+14:16:30 INFO:: Selfish Gene starts!
+14:16:30 INFO:: Generation 1: 1 individual in archive
+14:16:30 INFO:: i0 (gen 1): (Matches: 0.5, Score: 755.0, Literals: 37) [0, 0, 1, 7\xd70, 1, 1, 5\xd70, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 7\xd71, 4\xd70, 4\xd71, 7\xd70, 1, 4\xd70, 3\xd71, 0, 1, 4\xd70, 1, 0, 3\xd71, 4\xd70, 1, 1, 3\xd70, 1, 0, 0, 1, 0]
+14:16:55 INFO:: 
+14:16:55 WARNING:: Steady state reached! - Generation 3098
+14:16:55 INFO:: 
+
+14:16:55 INFO:: Solution: {I{[0, 1, 1, 3\xd70, 1, 0, 3\xd71, 0, 1, 0, 0, 1, 0, 1, 0, 0, 3\xd71, 3\xd70, 1, 1, 0, 0, 1, 0, 0, 1, 4\xd70, 1, 1, 0, 1, 1, 4\xd70, 1, 0, 1, 1, 5\xd70, 1, 0, 1, 0, 1, 4\xd70, 3\xd71, 0, 1, 0, 4\xd71, 3\xd70, 1, 0, 3\xd71, 0, 0, 3\xd71, 0, 1, 1], f=(Matches: 1, Score: 616.0, Literals: 43), \u2605:1097}}
+
+14:16:55 INFO:: Rule 1 optimized
+14:16:55 INFO:: RULE (1_optimized_sgx) - num_literals: 43 - score: 616.00 - matches: 1/15 (6.67) reports
+14:16:55 INFO:: 
+
+14:16:55 INFO:: Reports matched by the optimized set of rules: 15/15
+
+0 hours 0 minutes and 25 seconds elapsed.
+
+
+>>> type 5 cluster 3 <<<
+__  __   __  __     _____
+\ \/ /__ \ \/ /__ _/ ___/__ ___   YaYaGen -- Yet Another Yara Rule Generator
+ \  / _ `/\  / _ `/ (_ / -_) _ \  (!) v0.5_winter18
+ /_/\_,_/ /_/\_,_/\___/\__/_//_/  by Andrea Marcelli & Giovanni Squillero
+
+14:16:55 INFO:: Analyzing 7 reports
+14:16:55 INFO:: Greedy run
+14:16:55 INFO:: Total rule number: 1
+14:16:55 INFO:: RULE (0) - num_literals: 21 - score: 1590.00 - matches: 7/7 (100.00) reports
+14:16:55 INFO:: Reports matched by this set of rules: 7/7
+
+14:16:55 INFO:: Try to improve rules with Selfish Gene optimizer...
+14:16:55 INFO:: 
+14:16:55 INFO:: # SGX configuration parameters #
+14:16:55 INFO:: Alpha default value: 0.013229
+14:16:55 INFO:: Initial probability [0: 0.12, 1: 0.88]
+14:16:55 INFO:: No mutation probability configured, will be used the default value.
+14:16:55 INFO:: Maximum number of generations: 20000 - Archive size: 5
+14:16:55 INFO:: Steady state after: 2000 generations
+
+14:16:55 INFO:: Allele Distribution generated: [21 \xd7 \u03bb2{[0:0.1189, 1:0.8811], \u03b1=0.01323}]
+14:16:55 INFO:: Selfish Gene starts!
+14:16:55 INFO:: Generation 1: 1 individual in archive
+14:16:55 INFO:: i0 (gen 1): (Matches: 0.5, Score: 1475.0, Literals: 19) [3\xd71, 0, 13\xd71, 0, 3\xd71]
+14:17:24 INFO:: 
+14:17:24 WARNING:: Steady state reached! - Generation 13849
+14:17:24 INFO:: 
+
+14:17:24 INFO:: Solution: {I{[1, 0, 1, 8\xd70, 1, 6\xd70, 1, 0, 1], f=(Matches: 7, Score: 415.0, Literals: 5), \u2605:11872}, I{[1, 0, 1, 8\xd70, 1, 0, 1, 1, 6\xd70], f=(Matches: 7, Score: 415.0, Literals: 5), \u2605:11871}, I{[1, 0, 1, 8\xd70, 1, 0, 1, 6\xd70, 1], f=(Matches: 7, Score: 415.0, Literals: 5), \u2605:11848}, I{[1, 0, 1, 5\xd70, 1, 0, 0, 1, 0, 1, 7\xd70], f=(Matches: 7, Score: 415.0, Literals: 5), \u2605:11852}, I{[1, 8\xd70, 1, 0, 1, 0, 1, 6\xd70, 1], f=(Matches: 7, Score: 415.0, Literals: 5), \u2605:11866}}
+
+14:17:24 INFO:: Rule 0 optimized
+14:17:24 INFO:: RULE (0_optimized_sgx) - num_literals: 5 - score: 415.00 - matches: 7/7 (100.00) reports
+14:17:24 INFO:: 
+
+14:17:24 INFO:: Reports matched by the optimized set of rules: 7/7
+
+0 hours 0 minutes and 29 seconds elapsed.
+
+
+
+>>>>> Clusters of type 6 <<<<<
+
+>>> type 6 cluster 3 <<<
+__  __   __  __     _____
+\ \/ /__ \ \/ /__ _/ ___/__ ___   YaYaGen -- Yet Another Yara Rule Generator
+ \  / _ `/\  / _ `/ (_ / -_) _ \  (!) v0.5_winter18
+ /_/\_,_/ /_/\_,_/\___/\__/_//_/  by Andrea Marcelli & Giovanni Squillero
+
+14:17:25 INFO:: Analyzing 20 reports
+14:17:25 INFO:: Greedy run
+14:17:25 INFO:: Total rule number: 3
+14:17:25 INFO:: RULE (0) - num_literals: 20 - score: 421.00 - matches: 7/20 (35.00) reports
+14:17:25 INFO:: RULE (1) - num_literals: 24 - score: 438.00 - matches: 16/20 (80.00) reports
+14:17:25 INFO:: RULE (2) - num_literals: 37 - score: 750.00 - matches: 1/20 (5.00) reports
+14:17:25 INFO:: Reports matched by this set of rules: 20/20
+
+14:17:25 INFO:: Try to improve rules with Selfish Gene optimizer...
+14:17:25 INFO:: 
+14:17:25 INFO:: # SGX configuration parameters #
+14:17:25 INFO:: Alpha default value: 0.013229
+14:17:25 INFO:: Initial probability [0: 0.22, 1: 0.78]
+14:17:25 INFO:: No mutation probability configured, will be used the default value.
+14:17:25 INFO:: Maximum number of generations: 20000 - Archive size: 5
+14:17:25 INFO:: Steady state after: 2000 generations
+
+14:17:25 INFO:: Allele Distribution generated: [37 \xd7 \u03bb2{[0:0.2192, 1:0.7808], \u03b1=0.01323}]
+14:17:25 INFO:: Selfish Gene starts!
+14:17:25 INFO:: Generation 1: 1 individual in archive
+14:17:25 INFO:: i0 (gen 1): (Matches: 1, Score: 597.0, Literals: 28) [1, 0, 5\xd71, 0, 19\xd71, 4\xd70, 1, 3\xd70, 1, 1]
+
+14:18:48 INFO:: Solution: {I{[7\xd71, 0, 15\xd71, 0, 1, 5\xd70, 5\xd71, 0, 1], f=(Matches: 1, Score: 400.0, Literals: 29), \u2605:19820}, I{[7\xd71, 0, 10\xd71, 0, 1, 1, 0, 1, 0, 1, 1, 3\xd70, 6\xd71, 0, 1], f=(Matches: 1, Score: 400.0, Literals: 29), \u2605:19968}}
+
+14:18:48 INFO:: Rule 2 optimized
+14:18:48 INFO:: RULE (2_optimized_sgx) - num_literals: 29 - score: 400.00 - matches: 1/20 (5.00) reports
+14:18:48 INFO:: 
+
+14:18:48 INFO:: Reports matched by the optimized set of rules: 20/20
+
+0 hours 1 minutes and 24 seconds elapsed.
+
+
+>>> type 6 cluster 4 <<<
+__  __   __  __     _____
+\ \/ /__ \ \/ /__ _/ ___/__ ___   YaYaGen -- Yet Another Yara Rule Generator
+ \  / _ `/\  / _ `/ (_ / -_) _ \  (!) v0.5_winter18
+ /_/\_,_/ /_/\_,_/\___/\__/_//_/  by Andrea Marcelli & Giovanni Squillero
+
+14:18:48 INFO:: Analyzing 4 reports
+14:18:48 INFO:: Greedy run
+14:18:48 INFO:: Total rule number: 1
+14:18:48 INFO:: RULE (0) - num_literals: 92 - score: 7755.00 - matches: 4/4 (100.00) reports
+14:18:48 INFO:: Reports matched by this set of rules: 4/4
+
+14:18:48 INFO:: Try to improve rules with Selfish Gene optimizer...
+14:18:48 INFO:: 
+14:18:48 INFO:: # SGX configuration parameters #
+14:18:48 INFO:: Alpha default value: 0.013229
+14:18:48 INFO:: Initial probability [0: 0.56, 1: 0.44]
+14:18:48 INFO:: No mutation probability configured, will be used the default value.
+14:18:48 INFO:: Maximum number of generations: 20000 - Archive size: 5
+14:18:48 INFO:: Steady state after: 2000 generations
+
+14:18:48 INFO:: Allele Distribution generated: [92 \xd7 \u03bb2{[0:0.5639, 1:0.4361], \u03b1=0.01323}]
+14:18:48 INFO:: Selfish Gene starts!
+14:18:48 INFO:: Generation 1: 1 individual in archive
+14:18:48 INFO:: i0 (gen 1): (Matches: 0.5, Score: 3375.0, Literals: 38) [1, 0, 1, 3\xd70, 1, 0, 0, 5\xd71, 0, 0, 3\xd71, 0, 0, 1, 0, 0, 1, 1, 4\xd70, 1, 0, 3\xd71, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 4\xd70, 1, 0, 1, 3\xd70, 1, 1, 0, 1, 8\xd70, 1, 1, 5\xd70, 1, 3\xd70, 1, 1, 3\xd70, 1, 0, 1, 1, 3\xd70]
+14:20:56 INFO:: 
+14:20:56 WARNING:: Steady state reached! - Generation 16824
+14:20:56 INFO:: 
+
+14:20:56 INFO:: Solution: {I{[12\xd70, 1, 0, 0, 1, 15\xd70, 1, 0, 1, 0, 1, 9\xd70, 1, 0, 1, 0, 0, 1, 3\xd70, 1, 3\xd70, 1, 5\xd70, 1, 4\xd70, 1, 7\xd70, 1, 3\xd70, 1, 0, 1, 1, 7\xd70], f=(Matches: 4, Score: 410.0, Literals: 16), \u2605:16801}, I{[12\xd70, 1, 17\xd70, 1, 0, 0, 1, 0, 1, 9\xd70, 1, 0, 1, 0, 0, 1, 3\xd70, 1, 0, 1, 3\xd70, 1, 3\xd70, 1, 4\xd70, 1, 7\xd70, 1, 3\xd70, 1, 0, 1, 1, 7\xd70], f=(Matches: 4, Score: 410.0, Literals: 16), \u2605:16815}, I{[7\xd70, 1, 4\xd70, 1, 0, 0, 1, 17\xd70, 1, 0, 1, 9\xd70, 1, 0, 1, 0, 0, 1, 3\xd70, 1, 9\xd70, 1, 1, 3\xd70, 1, 7\xd70, 1, 0, 0, 1, 1, 0, 1, 8\xd70], f=(Matches: 4, Score: 410.0, Literals: 16), \u2605:14823}}
+
+14:20:56 INFO:: Rule 0 optimized
+14:20:56 INFO:: RULE (0_optimized_sgx) - num_literals: 16 - score: 410.00 - matches: 4/4 (100.00) reports
+14:20:56 INFO:: 
+
+14:20:56 INFO:: Reports matched by the optimized set of rules: 4/4
+
+0 hours 2 minutes and 8 seconds elapsed.
+
+
+
+----- That's all folks! -----
+This test ended on: Mon Mar 26 14:20:57 EDT 2018
+0 hours 38 minutes and 52 seconds elapsed.
+
