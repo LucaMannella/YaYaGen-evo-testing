@@ -610,5 +610,5 @@ __  __   __  __     _____
 
 ----- That's all folks! -----
 This test ended on: Mon Mar 26 14:20:57 EDT 2018
-0 hours 38 minutes and 52 seconds elapsed.
+0 hours 37 minutes and 19 seconds elapsed.
 
